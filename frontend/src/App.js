@@ -66,7 +66,7 @@ function App() {
     getStripeApiKey();
   }, []);
 
-  window.addEventListener("contextmenu", (e) => e.preventDefault());
+  // window.addEventListener("contextmenu", (e) => e.preventDefault());
 
   return (
     <Router>
@@ -95,6 +95,7 @@ function App() {
         <ProtectedRoute exact path="/account" component={Profile} />
 
         <ProtectedRoute exact path="/me/update" component={UpdateProfile} />
+
 
         <ProtectedRoute
           exact
@@ -192,4 +193,3 @@ function App() {
 }
 
 export default App;
-
