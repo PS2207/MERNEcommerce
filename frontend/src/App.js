@@ -1,6 +1,6 @@
 import "./App.css";
 import { useEffect, useState } from "react";
-import Header from "./component/layout/Header/Header.js";
+import Header from "./component/layout/Header/Header";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import WebFont from "webfontloader";
 import React from "react";
@@ -30,8 +30,8 @@ import { loadStripe } from "@stripe/stripe-js";
 import OrderSuccess from "./component/Cart/OrderSuccess";
 import MyOrders from "./component/Order/MyOrders";
 import OrderDetails from "./component/Order/OrderDetails";
-import Dashboard from "./component/Admin/Dashboard.js";
-import ProductList from "./component/Admin/ProductList.js";
+import Dashboard from "./component/Admin/Dashboard";
+import ProductList from "./component/Admin/ProductList";
 import NewProduct from "./component/Admin/NewProduct";
 import UpdateProduct from "./component/Admin/UpdateProduct";
 import OrderList from "./component/Admin/OrderList";
@@ -66,7 +66,7 @@ function App() {
     getStripeApiKey();
   }, []);
 
-  // window.addEventListener("contextmenu", (e) => e.preventDefault());
+  window.addEventListener("contextmenu", (e) => e.preventDefault());
 
   return (
     <Router>
