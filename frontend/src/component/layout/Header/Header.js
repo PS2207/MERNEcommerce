@@ -30,7 +30,8 @@ const options = {
   link1Margin: "1vmax",
   
   profileIcon :"true",
-  profileIconElement :"FaUserAlt",
+  searchIcon: "true",
+  searchIconMargin: "0 3vmax",
   profileIconUrl: "/login",
   profileIconColor: "rgba(35, 35, 35,0.8)",
   searchIconColor: "rgba(35, 35, 35,0.8)",
@@ -42,7 +43,7 @@ const options = {
 };
 
 const Header = () => {
-  return <ReactNavbar {...options} />;
+  return <ReactNavbar {...options} ProfileIconElement={FaUserAlt}   SearchIconElement={FaSearch} />;
 };
 
 export default Header;
